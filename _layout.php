@@ -1,6 +1,6 @@
 <?php
 /**
- * admin/trips.php — จัดการแพ็กเกจทริป (CRUD)
+ * admin/trips.php — จัดการแพ็กเกจทริป (CRUD)kk
  */
 require_once __DIR__ . '/../config/db_connect.php';
 $pageTitle  = 'จัดการแพ็กเกจทริป';
