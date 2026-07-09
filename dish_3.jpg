@@ -1,0 +1,526 @@
+/* ════════════════════════════════════════════════
+   theme.css — Deep Ocean Override
+   โหลดหลัง style.css ใน header.php
+   ════════════════════════════════════════════════ */
+
+/* ── Override CSS Variables ทุกหน้า ── */
+:root {
+  --sea-deep:   #071e3d !important;
+  --sea-mid:    #0077b6 !important;
+  --sea-light:  #caf0f8 !important;
+  --sea-btn:    #00b4d8 !important;
+  --sand:       #f0f8ff !important;
+  --sand-dark:  #e1f0fa !important;
+  --gold:       #f77f00 !important;
+  --gold-light: #faa307 !important;
+}
+
+/* ── Body ── */
+body { background: #f0f8ff !important; }
+
+/* ── Navbar ── */
+.navbar,
+nav.navbar {
+  background: linear-gradient(90deg,#071e3d,#0a3d62) !important;
+  box-shadow: 0 2px 20px rgba(7,30,61,.35) !important;
+}
+.navbar .nav-link:hover { color: #48cae4 !important; }
+.navbar .dropdown-menu {
+  border: none !important;
+  border-radius: 14px !important;
+  box-shadow: 0 8px 32px rgba(7,30,61,.18) !important;
+}
+.navbar .dropdown-item:hover {
+  background: rgba(0,180,216,.1) !important;
+  color: #0077b6 !important;
+}
+
+/* ── Hero / Page Header Sections ── */
+.page-hero,
+.hero-booking,
+.about-hero,
+.dash-hero,
+[class*="hero"] {
+  background: linear-gradient(135deg,#071e3d 0%,#0a3d62 55%,#0077b6 100%) !important;
+}
+
+/* ── Stats Bar ── */
+.stats-bar, .stat-bar {
+  background: #071e3d !important;
+}
+.stat-num, .stat-item .num { color: #48cae4 !important; }
+
+/* ── Background Sections ── */
+.steps-section,
+.values-section,
+.gallery-section { background: #e1f0fa !important; }
+
+.video-section,
+.must-try,
+.cta-banner,
+.cta-section,
+.map-note {
+  background: linear-gradient(135deg,#071e3d,#0a3d62) !important;
+}
+
+/* ── Cards ── */
+.trip-card,
+.hotel-card,
+.resto-card,
+.product-mini-card,
+.community-card,
+.team-card,
+.value-card,
+.stat-card,
+.booking-card,
+.order-card,
+.section-card,
+.dish-card,
+.admin-table {
+  border: 1px solid rgba(0,180,216,.12) !important;
+  box-shadow: 0 4px 20px rgba(7,30,61,.08) !important;
+}
+.trip-card:hover,
+.hotel-card:hover,
+.resto-card:hover,
+.community-card:hover,
+.team-card:hover,
+.value-card:hover {
+  box-shadow: 0 12px 36px rgba(7,30,61,.16) !important;
+}
+
+/* ── Buttons ── */
+.btn-book,
+.btn-hotel,
+.btn-resto,
+.btn-checkout,
+.btn-action-main,
+.btn-add,
+.btn-book-new,
+.btn-back,
+.btn-cta-primary,
+.btn-hero-primary,
+.btn-slide-primary,
+.btn-pay,
+.btn-confirm,
+.btn-view-all,
+button[type="submit"].btn-book {
+  background: linear-gradient(135deg,#00b4d8,#0077b6) !important;
+  box-shadow: 0 4px 16px rgba(0,119,182,.3) !important;
+}
+.btn-gold,
+.btn-slide-primary {
+  background: linear-gradient(135deg,#f77f00,#faa307) !important;
+  box-shadow: 0 4px 16px rgba(247,127,0,.3) !important;
+}
+
+/* ── Filter Buttons ── */
+.filter-btn.active,
+.filter-btn:hover,
+button.active[onclick*="filter"] {
+  background: #0077b6 !important;
+  border-color: #0077b6 !important;
+  color: #fff !important;
+}
+
+/* ── Team / Value Cards Background ── */
+.team-card { background: #f0f8ff !important; }
+.value-card { background: #fff !important; }
+.dish-card {
+  background: rgba(255,255,255,.12) !important;
+  border: 1px solid rgba(255,255,255,.18) !important;
+}
+
+/* ── Section Headings ── */
+.sec-title,
+.section-head h2,
+h2.sec-title { color: #071e3d !important; }
+.sec-tag { color: #0077b6 !important; }
+
+/* ── Leaf Divider ── */
+.leaf-divider { color: #0077b6 !important; }
+.leaf-divider::before,
+.leaf-divider::after { background: #b0ddf0 !important; }
+
+/* ── Step Circle ── */
+.step-circle { background: #0077b6 !important; }
+
+/* ── Price / Gold Text ── */
+.price, .booking-price,
+.item-price, .total-price,
+.stat-num { color: #f77f00 !important; }
+
+/* ── Status Badges ── */
+.status-pending   { background: #fff3cd !important; color: #856404 !important; }
+.status-paid      { background: #d1e7dd !important; color: #0f5132 !important; }
+.status-shipping  { background: #cff4fc !important; color: #055160 !important; }
+.status-delivered { background: #d1e7dd !important; color: #0f5132 !important; }
+.status-cancelled { background: #f8d7da !important; color: #842029 !important; }
+
+/* ── Admin Sidebar ── */
+.admin-sidebar {
+  background: linear-gradient(180deg,#071e3d,#0a3d62) !important;
+}
+.sidebar-link.active {
+  border-left-color: #00b4d8 !important;
+}
+
+/* ── Footer ── */
+footer.site-footer,
+.site-footer {
+  background: linear-gradient(135deg,#071e3d,#0a3d62) !important;
+}
+
+/* ── Wave / Amenity Tags ── */
+.amenity, .menu-tag, .trip-info .tag {
+  background: #e1f0fa !important;
+  color: #0077b6 !important;
+}
+
+/* ── Form Controls ── */
+.form-control:focus,
+.form-select:focus {
+  border-color: #00b4d8 !important;
+  box-shadow: 0 0 0 3px rgba(0,180,216,.15) !important;
+}
+
+/* ── Modal Header ── */
+.modal-header[style*="background:var(--sea-deep)"],
+.modal-header[style*="background:var(--gold)"] {
+  background: linear-gradient(135deg,#071e3d,#0a3d62) !important;
+}
+
+/* ── Quick Links ── */
+.quick-link:hover {
+  box-shadow: 0 8px 24px rgba(7,30,61,.14) !important;
+}
+
+/* ── Pending Alert ── */
+.pending-alert { border-color: #b0ddf0 !important; }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar-thumb { background: #00b4d8 !important; }
+
+/* ════════════════════════════════════════════════
+   BUBBLES & WAVES — ลูกเล่นฟองอากาศ + คลื่นน้ำ
+   ════════════════════════════════════════════════ */
+
+/* ── Bubble Container ── */
+.bubble-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+.bubble-bg .b {
+  position: absolute;
+  bottom: -80px;
+  border-radius: 50%;
+  background: rgba(72,202,228,0.12);
+  border: 1px solid rgba(72,202,228,0.25);
+  animation: bubbleRise linear infinite;
+}
+@keyframes bubbleRise {
+  0%   { transform: translateY(0) translateX(0) scale(1);   opacity: .7; }
+  50%  { transform: translateY(-50vh) translateX(20px) scale(1.1); opacity: .5; }
+  100% { transform: translateY(-110vh) translateX(-10px) scale(1.2); opacity: 0; }
+}
+
+/* ── Wave ด้านล่างทุก Hero Section ── */
+.wave-bottom {
+  position: absolute;
+  bottom: -1px; left: 0; right: 0;
+  line-height: 0; pointer-events: none;
+}
+.wave-bottom svg { display: block; width: 100%; }
+
+/* ── Floating Wave Background ── */
+.wave-float {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 80px;
+  overflow: hidden;
+  pointer-events: none;
+}
+.wave-float svg {
+  position: absolute;
+  bottom: 0;
+  width: 200%;
+  animation: waveDrift 8s linear infinite;
+}
+.wave-float svg:nth-child(2) {
+  animation-duration: 12s;
+  animation-direction: reverse;
+  opacity: .5;
+}
+@keyframes waveDrift {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ════════════════════════════════════════════════
+   TEXT COLOR FIX — แก้ตัวอักษรในส่วนพื้นหลังเข้ม
+   ════════════════════════════════════════════════ */
+
+/* ── Video Section ── */
+.video-section .sec-title,
+.video-section h2,
+.video-section h3 { color: #ffffff !important; }
+.video-section .sec-lead,
+.video-section p  { color: rgba(255,255,255,.82) !important; }
+.video-section .sec-tag { color: #48cae4 !important; }
+
+/* ── CTA / Must Try / Map Note ── */
+.cta-banner h2, .cta-banner p,
+.cta-section h2, .cta-section p,
+.must-try h2, .must-try p,
+.map-note h3, .map-note p,
+.map-note div {
+  color: rgba(255,255,255,.85) !important;
+}
+.dish-name { color: #ffffff !important; }
+.dish-desc { color: rgba(255,255,255,.7) !important; }
+
+/* ── Stats Bar ── */
+.stats-bar .stat-lbl,
+.stat-bar .lbl { color: rgba(255,255,255,.7) !important; }
+
+/* ── Hero Sections ── */
+.page-hero h1, .page-hero p,
+.hero-booking h1, .hero-booking p,
+.about-hero h1, .about-hero p,
+.dash-hero h1,  .dash-hero p,
+.hero-content h1, .hero-content p { color: #ffffff !important; }
+
+/* ── About Page ── */
+.story-section .sec-title  { color: #071e3d !important; }
+.story-section .sec-lead   { color: #4a7fa5 !important; }
+.story-section .leaf-line  { color: #0077b6 !important; }
+.values-section .value-title { color: #071e3d !important; }
+.values-section .value-text  { color: #4a7fa5 !important; }
+
+/* ── Booking Page ── */
+.trip-card h3  { color: #071e3d !important; }
+.trip-card .desc { color: #4a7fa5 !important; }
+
+/* ── General Dark Section Fix ── */
+section[style*="background:var(--sea-deep)"] h1,
+section[style*="background:var(--sea-deep)"] h2,
+section[style*="background:var(--sea-deep)"] p,
+section[style*="background:var(--sea-mid)"] h1,
+section[style*="background:var(--sea-mid)"] h2,
+section[style*="background:var(--sea-mid)"] p {
+  color: #ffffff !important;
+}
+
+/* ── Team Card ── */
+.team-name { color: #071e3d !important; }
+.team-role { color: #0077b6 !important; }
+.team-bio  { color: #4a7fa5 !important; }
+
+/* ── Footer Text ── */
+.site-footer,
+.site-footer p,
+.site-footer div,
+.site-footer a { color: rgba(255,255,255,.75) !important; }
+.site-footer a:hover { color: #48cae4 !important; }
+.site-footer .fw-bold, 
+.site-footer strong { color: #ffffff !important; }
+/* ── ปิด Sticky Filter Bar ── */
+.filter-bar {
+  position: static !important;
+  top: auto !important;
+  z-index: auto !important;
+}
+/* ════════════════════════════════════════════════
+   CARD ENHANCEMENT — เงา + สี + Hover Effects
+   ════════════════════════════════════════════════ */
+
+/* ── Community Cards ── */
+.community-card {
+  border: 1.5px solid rgba(0,180,216,.15) !important;
+  box-shadow: 0 8px 32px rgba(7,30,61,.10) !important;
+  transition: transform .3s, box-shadow .3s !important;
+}
+.community-card:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 20px 48px rgba(0,119,182,.18) !important;
+  border-color: rgba(0,180,216,.35) !important;
+}
+.community-card .img-wrap {
+  border-bottom: 2px solid rgba(0,180,216,.12) !important;
+}
+.community-card .icon-wrap {
+  background: linear-gradient(135deg,#e1f0fa,#caf0f8) !important;
+}
+.community-card .card-body-inner {
+  background: linear-gradient(180deg,#fff 0%,#f0f8ff 100%) !important;
+}
+
+/* ── Trip Cards ── */
+.trip-card {
+  border: 1.5px solid rgba(0,180,216,.15) !important;
+  box-shadow: 0 6px 28px rgba(7,30,61,.10) !important;
+  transition: transform .3s, box-shadow .3s !important;
+}
+.trip-card:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 18px 48px rgba(0,119,182,.2) !important;
+  border-color: rgba(0,180,216,.4) !important;
+}
+.trip-card .card-body {
+  background: linear-gradient(180deg,#fff,#f0f8ff) !important;
+}
+
+/* ── Hotel / Resto Cards ── */
+.hotel-card,
+.resto-card {
+  border: 1.5px solid rgba(0,180,216,.12) !important;
+  box-shadow: 0 6px 28px rgba(7,30,61,.09) !important;
+  transition: transform .3s, box-shadow .3s !important;
+}
+.hotel-card:hover,
+.resto-card:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 20px 48px rgba(0,119,182,.18) !important;
+  border-color: rgba(0,180,216,.38) !important;
+}
+
+/* ── Product Mini Cards ── */
+.product-mini-card {
+  border: 1.5px solid rgba(0,180,216,.12) !important;
+  box-shadow: 0 4px 20px rgba(7,30,61,.08) !important;
+  transition: transform .3s, box-shadow .3s !important;
+  background: linear-gradient(180deg,#fff,#f0f8ff) !important;
+}
+.product-mini-card:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 14px 36px rgba(0,119,182,.16) !important;
+  border-color: rgba(0,180,216,.35) !important;
+}
+
+/* ── Team Cards ── */
+.team-card {
+  border: 1.5px solid rgba(0,180,216,.12) !important;
+  box-shadow: 0 6px 28px rgba(7,30,61,.09) !important;
+  background: linear-gradient(180deg,#fff,#f0f8ff) !important;
+  transition: transform .3s, box-shadow .3s !important;
+}
+.team-card:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 18px 44px rgba(0,119,182,.18) !important;
+}
+.team-avatar,
+.avatar-placeholder {
+  border: 3px solid rgba(0,180,216,.3) !important;
+  box-shadow: 0 4px 16px rgba(0,119,182,.2) !important;
+}
+
+/* ── Value Cards ── */
+.value-card {
+  border: 1.5px solid rgba(0,180,216,.12) !important;
+  box-shadow: 0 4px 20px rgba(7,30,61,.07) !important;
+  background: linear-gradient(180deg,#fff,#f0f8ff) !important;
+  transition: transform .3s, box-shadow .3s !important;
+}
+.value-card:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 14px 36px rgba(0,119,182,.16) !important;
+  border-color: rgba(0,180,216,.35) !important;
+}
+
+/* ── Order / Booking Cards ── */
+.order-card,
+.booking-card {
+  border-left: 4px solid #00b4d8 !important;
+  box-shadow: 0 4px 20px rgba(7,30,61,.08) !important;
+  transition: transform .2s, box-shadow .2s !important;
+}
+.order-card:hover,
+.booking-card:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 10px 32px rgba(0,119,182,.15) !important;
+}
+.booking-card.confirmed { border-left-color: #198754 !important; }
+.booking-card.cancelled { border-left-color: #dc3545 !important; }
+
+/* ── Section Cards (Dashboard) ── */
+.section-card {
+  border: 1.5px solid rgba(0,180,216,.12) !important;
+  box-shadow: 0 4px 20px rgba(7,30,61,.08) !important;
+}
+
+/* ── Quick Links ── */
+.quick-link {
+  border: 1.5px solid rgba(0,180,216,.15) !important;
+  box-shadow: 0 4px 16px rgba(7,30,61,.07) !important;
+  background: linear-gradient(180deg,#fff,#f0f8ff) !important;
+  transition: transform .3s, box-shadow .3s !important;
+}
+.quick-link:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 14px 36px rgba(0,119,182,.18) !important;
+  border-color: rgba(0,180,216,.4) !important;
+}
+
+/* ── Stat Cards (Dashboard) ── */
+.stat-card {
+  border-left: 4px solid #00b4d8 !important;
+  box-shadow: 0 4px 20px rgba(7,30,61,.08) !important;
+  background: linear-gradient(135deg,#fff,#f0f8ff) !important;
+  transition: transform .2s, box-shadow .2s !important;
+}
+.stat-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 12px 32px rgba(0,119,182,.15) !important;
+}
+.stat-card.gold  { border-left-color: #f77f00 !important; }
+.stat-card.teal  { border-left-color: #0096c7 !important; }
+.stat-card.coral { border-left-color: #e05c3a !important; }
+/* ════════════════════════════════════════════════
+   PRODUCT CARDS — pages/products.php
+   ════════════════════════════════════════════════ */
+
+.product-card {
+  border: 1.5px solid rgba(0,180,216,.15) !important;
+  box-shadow: 0 8px 32px rgba(7,30,61,.10) !important;
+  transition: transform .3s, box-shadow .3s !important;
+  background: linear-gradient(180deg,#fff,#f0f8ff) !important;
+}
+.product-card:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 20px 48px rgba(0,119,182,.2) !important;
+  border-color: rgba(0,180,216,.4) !important;
+}
+.product-card .img-wrap {
+  background: linear-gradient(135deg,#e1f0fa,#caf0f8) !important;
+  border-bottom: 2px solid rgba(0,180,216,.12) !important;
+}
+.product-card h3 { color: #071e3d !important; }
+.product-card .price { color: #f77f00 !important; }
+.product-card .desc { color: #4a7fa5 !important; }
+
+.badge-instock {
+  background: linear-gradient(135deg,#00b4d8,#0077b6) !important;
+}
+.badge-preorder {
+  background: linear-gradient(135deg,#f77f00,#faa307) !important;
+}
+
+.btn-card {
+  background: linear-gradient(135deg,#00b4d8,#071e3d) !important;
+  box-shadow: 0 4px 14px rgba(0,119,182,.25) !important;
+}
+.btn-card:hover { opacity:.88; transform:translateY(-1px); }
+
+/* Filter Tabs */
+.filter-tab {
+  border-color: rgba(0,180,216,.35) !important;
+  color: #0077b6 !important;
+}
+.filter-tab.active, .filter-tab:hover {
+  background: linear-gradient(135deg,#00b4d8,#0077b6) !important;
+  border-color: #00b4d8 !important;
+  color: #fff !important;
+}

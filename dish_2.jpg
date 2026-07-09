@@ -1,0 +1,258 @@
+/* ════════════════════════════════════════════════════════
+   style.css — บ้านแหลมสน · Deep Ocean Theme
+   ════════════════════════════════════════════════════════ */
+
+/* ── CSS Variables ── */
+:root {
+  --ocean-deep:   #071e3d;
+  --ocean-dark:   #0a3d62;
+  --ocean-mid:    #0077b6;
+  --ocean-light:  #00b4d8;
+  --ocean-cyan:   #48cae4;
+  --ocean-pale:   #caf0f8;
+  --sand:         #f0f8ff;
+  --sand-dark:    #e1f0fa;
+  --gold:         #f77f00;
+  --gold-light:   #faa307;
+  --text-dark:    #071e3d;
+  --text-muted:   #4a7fa5;
+  --white:        #ffffff;
+  --card-shadow:  0 4px 24px rgba(7,30,61,.10);
+  --card-hover:   0 12px 36px rgba(7,30,61,.18);
+}
+
+/* ── Reset & Base ── */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Prompt', sans-serif;
+  background: var(--sand);
+  color: var(--text-dark);
+  line-height: 1.7;
+}
+a { text-decoration: none; color: inherit; }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--sand); }
+::-webkit-scrollbar-thumb { background: var(--ocean-light); border-radius: 10px; }
+
+/* ── Typography ── */
+h1,h2,h3,h4,h5,h6 { color: var(--ocean-deep); }
+.font-serif { font-family: 'Playfair Display', serif; }
+
+/* ── Buttons ── */
+.btn-primary-ocean {
+  background: linear-gradient(135deg, var(--ocean-light), var(--ocean-mid));
+  color: var(--white);
+  border: none;
+  border-radius: 50px;
+  padding: .7rem 1.8rem;
+  font-family: 'Prompt', sans-serif;
+  font-size: .95rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all .25s;
+  box-shadow: 0 4px 16px rgba(0,119,182,.3);
+}
+.btn-primary-ocean:hover {
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,119,182,.4);
+}
+.btn-gold {
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  color: var(--white);
+  border: none;
+  border-radius: 50px;
+  padding: .7rem 1.8rem;
+  font-family: 'Prompt', sans-serif;
+  font-size: .95rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all .25s;
+  box-shadow: 0 4px 16px rgba(247,127,0,.35);
+}
+.btn-gold:hover {
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(247,127,0,.45);
+}
+.btn-outline-ocean {
+  border: 2px solid var(--ocean-cyan);
+  color: var(--ocean-cyan);
+  background: transparent;
+  border-radius: 50px;
+  padding: .68rem 1.6rem;
+  font-family: 'Prompt', sans-serif;
+  font-size: .95rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: all .25s;
+}
+.btn-outline-ocean:hover {
+  background: var(--ocean-cyan);
+  color: var(--ocean-deep);
+}
+
+/* ── Cards ── */
+.card-ocean {
+  background: var(--white);
+  border-radius: 18px;
+  box-shadow: var(--card-shadow);
+  border: 1px solid rgba(0,180,216,.08);
+  overflow: hidden;
+  transition: transform .25s, box-shadow .25s;
+}
+.card-ocean:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--card-hover);
+}
+
+/* ── Section Backgrounds ── */
+.bg-ocean-deep { background: var(--ocean-deep); }
+.bg-ocean-dark { background: var(--ocean-dark); }
+.bg-sand       { background: var(--sand); }
+.bg-sand-dark  { background: var(--sand-dark); }
+.bg-ocean-gradient {
+  background: linear-gradient(135deg, var(--ocean-deep) 0%, var(--ocean-dark) 50%, var(--ocean-mid) 100%);
+}
+
+/* ── Wave Divider ── */
+.wave-divider { line-height: 0; }
+.wave-divider svg { display: block; width: 100%; }
+
+/* ── Status Badges ── */
+.badge-ocean   { background: rgba(0,180,216,.15); color: var(--ocean-mid); border-radius: 20px; padding: .3em .9em; font-size: .75rem; font-weight: 600; }
+.badge-gold    { background: rgba(247,127,0,.15);  color: var(--gold);      border-radius: 20px; padding: .3em .9em; font-size: .75rem; font-weight: 600; }
+.badge-success { background: rgba(40,167,69,.12);  color: #1a7a3a;          border-radius: 20px; padding: .3em .9em; font-size: .75rem; font-weight: 600; }
+.badge-danger  { background: rgba(220,53,69,.12);  color: #9b1c2a;          border-radius: 20px; padding: .3em .9em; font-size: .75rem; font-weight: 600; }
+
+/* ── Form Controls ── */
+.form-control-ocean {
+  border: 1.5px solid rgba(0,180,216,.25);
+  border-radius: 10px;
+  font-family: 'Prompt', sans-serif;
+  font-size: .9rem;
+  padding: .6rem 1rem;
+  transition: border-color .2s, box-shadow .2s;
+  background: var(--white);
+}
+.form-control-ocean:focus {
+  border-color: var(--ocean-light);
+  box-shadow: 0 0 0 3px rgba(0,180,216,.12);
+  outline: none;
+}
+
+/* ── Navbar Override ── */
+.navbar {
+  background: linear-gradient(90deg, var(--ocean-deep) 0%, var(--ocean-dark) 100%) !important;
+  box-shadow: 0 2px 20px rgba(7,30,61,.3);
+}
+.navbar .nav-link:hover { color: var(--ocean-cyan) !important; }
+.navbar .dropdown-menu {
+  border: none !important;
+  box-shadow: 0 8px 32px rgba(7,30,61,.15) !important;
+  border-radius: 14px !important;
+}
+.navbar .dropdown-item:hover {
+  background: rgba(0,180,216,.08);
+  color: var(--ocean-mid);
+}
+
+/* ── Footer ── */
+.site-footer {
+  background: linear-gradient(135deg, var(--ocean-deep), var(--ocean-dark));
+  color: rgba(255,255,255,.7);
+  padding: 3rem 0 1.5rem;
+}
+.site-footer a:hover { color: var(--ocean-cyan); }
+
+/* ── Page Hero Sections ── */
+.page-hero {
+  background: linear-gradient(135deg, var(--ocean-deep) 0%, var(--ocean-dark) 60%, var(--ocean-mid) 100%);
+  color: var(--white);
+  padding: 3rem 0 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.page-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0; height: 40px;
+  background: var(--sand);
+  clip-path: ellipse(55% 100% at 50% 100%);
+}
+
+/* ── Animations ── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up { animation: fadeInUp .6s ease both; }
+
+/* ── Utilities ── */
+.text-ocean      { color: var(--ocean-mid); }
+.text-cyan       { color: var(--ocean-cyan); }
+.text-gold       { color: var(--gold); }
+.text-ocean-deep { color: var(--ocean-deep); }
+.rounded-ocean   { border-radius: 18px; }
+.shadow-ocean    { box-shadow: var(--card-shadow); }
+/* ── Force Override ทุกหน้า ── */
+body { background: #f0f8ff !important; }
+
+.page-hero,
+.hero-booking,
+.about-hero,
+.dash-hero {
+  background: linear-gradient(135deg, #071e3d 0%, #0a3d62 60%, #0077b6 100%) !important;
+}
+
+.stats-bar,
+.stat-bar {
+  background: #071e3d !important;
+}
+
+.steps-section,
+.values-section {
+  background: #e1f0fa !important;
+}
+
+.filter-bar {
+  background: #ffffff !important;
+  border-bottom: 1px solid rgba(0,180,216,.2) !important;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: #0077b6 !important;
+  border-color: #0077b6 !important;
+  color: #fff !important;
+}
+
+.btn-book,
+.btn-checkout,
+.btn-action-main,
+.btn-add,
+.btn-book-new {
+  background: linear-gradient(135deg, #00b4d8, #0077b6) !important;
+}
+
+.btn-hotel,
+.btn-resto {
+  background: linear-gradient(135deg, #00b4d8, #071e3d) !important;
+}
+
+.section-card,
+.order-card,
+.booking-card,
+.hotel-card,
+.resto-card,
+.trip-card,
+.team-card,
+.value-card,
+.product-mini-card,
+.community-card {
+  border: 1px solid rgba(0,180,216,.1) !important;
+}
